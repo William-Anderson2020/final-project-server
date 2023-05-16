@@ -22,9 +22,11 @@ const Campus = db.define("campus", {
     type: Sequelize.STRING,
   },
 
-  imageURL: {
+  img: {
     type: Sequelize.STRING,
+    defaultValue: "https://cdn-icons-png.flaticon.com/512/182/182336.png",
   }
+
 });
 
 // Export the campus model
