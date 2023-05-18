@@ -15,7 +15,21 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
-  }
+  },
+
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+
+  imageURL: {
+    type: Sequelize.STRING,
+    defaultValue: "https://www.lightsong.net/wp-content/uploads/2020/12/blank-profile-circle.png"
+  },
+
+  gpa: {
+    type: Sequelize.FLOAT,
+  },
 });
 
 // Export the student model
